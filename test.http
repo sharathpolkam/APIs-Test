@@ -1,0 +1,20 @@
+#API -- 1
+GET http://localhost:3000/api/v1/longest-duration-movies
+
+###
+
+#API --2
+GET http://localhost:3000/api/v1/top-rated-movies
+
+####
+
+
+POST http://localhost:3000/api/v1/new-movie
+Content-Type: application/json
+
+{
+  "type": "short",
+  "title": "Jurassic Park",
+  "runtime": 3,
+  "genres" : "action"
+}
