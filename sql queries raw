@@ -1,1 +1,13 @@
 Raw SQL QUERY CODE
+
+
+2 A:
+
+SELECT 
+  tconst, primaryTitle, runtimeMinutes, genres
+FROM 
+   movies
+ORDER BY 
+    runtimeMinutes DESC
+LIMIT
+   10;
