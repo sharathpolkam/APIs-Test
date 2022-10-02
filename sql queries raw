@@ -11,3 +11,16 @@ ORDER BY
     runtimeMinutes DESC
 LIMIT
    10;
+  
+  
+  
+2 B :
+
+SELECT 
+   movies.tconst, movies.primaryTitle, movies.runtimeMinutes, movies.genres, ratings.averageRating
+FROM 
+   movies INNER JOIN ratings ON movies.tconst = ratings.tconst
+WHERE 
+   averageRating > 6.0
+ORDER BY 
+   averageRating;
